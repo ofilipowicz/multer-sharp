@@ -1,18 +1,15 @@
 /* eslint-disable func-names */
+import { Storage } from '@google-cloud/storage';
+import Promise from 'bluebird';
+import { PassThrough } from 'stream';
 
-'use strict';
-
-const { Storage } = require('@google-cloud/storage');
-const Promise = require('bluebird');
-const { PassThrough } = require('stream');
-
-const defaultOptions = require('./config/default');
-const sharpOptions = require('./lib/get-sharp-options');
-const getDestination = require('./lib/get-destination');
-const getFilename = require('./lib/get-filename');
-const transformer = require('./lib/transformer');
-const getFormat = require('./lib/get-format');
-const logger = require('./lib/logger');
+import defaultOptions from './config/default';
+import sharpOptions from './lib/get-sharp-options';
+import getDestination from './lib/get-destination';
+import getFilename from './lib/get-filename';
+import transformer from './lib/transformer';
+import getFormat from './lib/get-format';
+import logger from './lib/logger';
 
 class MulterSharp {
   constructor(options) {
@@ -217,4 +214,4 @@ class MulterSharp {
 
 MulterSharp.defaultOptions = defaultOptions;
 
-module.exports = (options) => new MulterSharp(options);
+export default (options) => new MulterSharp(options);

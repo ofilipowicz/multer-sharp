@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   uploads: {
     gcsUpload: {
       bucket: 'multer-sharp.appspot.com', // Required : bucket name to upload

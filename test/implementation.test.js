@@ -1,13 +1,10 @@
-'use strict';
-
 /* eslint-disable no-console */
 
-const express = require('express');
-const supertest = require('supertest');
-const multer = require('multer');
-
-const multerSharp = require('../index');
-const config = require('./config');
+import express from 'express';
+import supertest from 'supertest';
+import multer from 'multer';
+import multerSharp from '../index';
+import config from './config';
 
 const app = express();
 const agent = supertest.agent(app);

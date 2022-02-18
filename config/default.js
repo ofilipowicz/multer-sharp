@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
   acl: 'private',
   resize: true,
   extract: false,

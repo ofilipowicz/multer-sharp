@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [next]
+* **package:** update @types/sharp to 0.29.5
+* **package:** update codecov to 3.8.2
+* **package:** eslint to 8.9.0
+* **package:** update eslint-config-airbnb-base to 15.0.0
+* **package:** update lint-plugin-import to 2.25.4
+* **package:** update express to 4.17.3
+* **package:** update jest to 27.5.1
+* **package:** update multer to 1.4.4
+* **package:** update standard-version to 9.3.2
+* **package:** update supertest to 6.2.2
+* **package:** update @google-cloud/storage to 5.18.2
+* **package:** update bluebird to 3.7.2
+* **package:** update chalk to 4.1.2
+* **package:** update mime-types to 2.1.34
+* **package:** update object.entries to 1.1.5
+* **package:** update sharp to 0.30.1
+changed `filename` type from string to any (as it can be a function for e.g.)
+
 ### [0.6.2](https://github.com/ikhsanalatsary/multer-sharp/compare/v0.6.1...v0.6.2) (2020-03-15)
 
 

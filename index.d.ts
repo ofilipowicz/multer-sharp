@@ -110,7 +110,7 @@ export declare interface CloudStorageOptions extends UploadOptions {
   bucket: string;
   projectId: string;
   keyFilename?: string;
-  filename?: string;
+  filename?: any;
   acl?: string;
   sizes?: Sizes[];
   gzip?: boolean;
